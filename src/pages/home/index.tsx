@@ -1,23 +1,12 @@
-import { Link } from "react-router-dom"
-import ButtonFatec from "../../components/buttonfatec/ButtonFatec"
-import InputFatec from "../../components/inputFatec"
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
         <div>
-            <p>Olá Mundo!</p>
+            <h1>APRESENTAÇÃO</h1>
+            <p>Este projeto tem como objetivo de mostrar um site com 4 páginas, são elas: home, sobre, contato e taferas.</p>
             <hr />
-            <InputFatec
-                placeHolder="Digite seu nome"
-                defaultValue="" type="text" /><br />
-            <InputFatec
-                placeHolder="Digite seu email"
-                defaultValue="" type="email" /><br />
-            <InputFatec
-                placeHolder="Digite seu telefone"
-                defaultValue="" type="text" /><br />
-            <ButtonFatec label="Botão 2" type="button" />
-            <hr />
+          
             <Link to="/sobre">Sobre</Link>
             <Link to="/contato">Contato</Link>
             <Link to="/tarefas">Tarefas</Link>
